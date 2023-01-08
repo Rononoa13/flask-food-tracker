@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<div class="container theme-showcase col-sm-7 col-sm-offset-3" role="main">
+
+  <!-- <div class="row"> -->
+  <!-- <div> -->
+  <form method="POST" action="/">
+    <div class="form-group">
+      <label for="new-day">New Day</label>
+      <input type="date" class="form-control" id="new-day">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>
+  <br>
+
+  <!-- <div class="page-header"></div> -->
+  <hr>
+  <div class="card card-primary">
+    <div class="card-heading text-bg-primary rounded-top">
+      <h3 class="card-title">January 28, 2017</h3>
+    </div>
+    <div class="card-body">
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item"><a class="nav-link">Protein: <span class="badge bg-secondary">100</span></a></li>
+        <li class="nav-item"><a class="nav-link">Carbohydrates: <span class="badge bg-secondary">200</span></a></li>
+        <li class="nav-item"><a class="nav-link">Fat: <span class="badge bg-secondary">50</span></a></li>
+        <li class="nav-item"><a class="nav-link">Calories: <span class="badge bg-secondary">1650</span></a></li>
+        <li><a href="#" type="button" class="btn btn-link">View Detail</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- </div> -->
+
+</div>
+
+{% endblock %}
